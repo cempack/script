@@ -1,3 +1,4 @@
+To Download The Extentions , Go On Your Browser And Launch The Link
 https://extensions.gnome.org/extension/19/user-themes/
 https://extensions.gnome.org/extension/307/dash-to-dock/
 https://extensions.gnome.org/extension/3740/compiz-alike-magic-lamp-effect/
