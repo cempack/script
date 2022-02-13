@@ -1,6 +1,6 @@
 #! /bin/bash
 echo "$(tput setaf 2)###########Installing Dependencies###########$(tput setaf 7)"
-sudo apt install git curl
+sudo apt install git
 echo "$(tput setaf 2)###########Installing Themes###########$(tput setaf 7)$(tput setaf 7)"
 echo "$(tput setaf 2)Getting Orchis Theme$(tput setaf 7)"
 sudo git https://github.com/vinceliuice/Orchis-theme
