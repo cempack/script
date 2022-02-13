@@ -5,13 +5,13 @@ echo "$(tput setaf 2)###########Installing Themes###########$(tput setaf 7)$(tpu
 echo "$(tput setaf 2)Getting Orchis Theme$(tput setaf 7)"
 sudo git https://github.com/vinceliuice/Orchis-theme
 echo "$(tput setaf 2)Installing Orchis Theme$(tput setaf 7)"
-sudo ./Orchis-theme/install.sh --tweaks black
+sudo bash Orchis-theme/install.sh --tweaks black
 sudo snap install orchis-themes
 for i in $(snap connections | grep gtk-common-themes:gtk-3-themes | awk '{print $2}'); do sudo snap connect $i orchis-themes:gtk-3-themes; done
 echo "$(tput setaf 2)Getting Tela Icon Theme$(tput setaf 7)"
 sudo git https://github.com/vinceliuice/Tela-icon-theme
 echo "$(tput setaf 2)Installing Tela Icon Theme$(tput setaf 7)"
-sudo .Tela-icon-theme/install.sh
+sudo bash Tela-icon-theme/install.sh
 sudo snap install tela-icons
 for i in $(snap connections | grep gtk-common-themes:icon-themes | awk '{print $2}'); do sudo snap connect $i tela-icons:icon-themes; done
 echo "$(tput setaf 2)###########Installing Software###########$(tput setaf 7)"
@@ -32,3 +32,4 @@ sudo apt install apt-transport-https curl
 sudo apt update
 sudo apt install brave-browser
 echo "$(tput setaf 1)###########You Finished The Installation Now You Need To Install The Extentions In $(tput setaf 6)Extentions.txt $(tput setaf 1)And To Download The Extention For Ulauncher Who Are In $(tput setaf 6)Ulauncher.txt$(tput setaf 1)###########$(tput setaf 7)"
+exit
